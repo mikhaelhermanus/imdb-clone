@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { FiThumbsUp } from "react-icons/Fi";
+import { FiThumbsUp } from "react-icons/fi";
 
 const CardMovies = (props) => {
   const { data } = props;
