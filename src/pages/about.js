@@ -5,7 +5,10 @@ const About = () => {
     <div className="max-w-6xl mx-auto space-y-4 p-4">
       <h1 className="text-2xl font-medium text-amber-600">About</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+       Created By : Mikhael Hermanus
+       a simple IMDb clone website is build with free imdb api for learn nextjs 13 and deploy to 
+       vercel App. Learn something new abour SSR instead of CSR.
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut porttitor leo a
         diam sollicitudin tempor id. Pulvinar mattis nunc sed blandit libero
         volutpat sed cras ornare. Ullamcorper a lacus vestibulum sed arcu non
