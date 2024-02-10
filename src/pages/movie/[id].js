@@ -5,13 +5,13 @@ const MoviePage = () => {
   const [movie, setMovie] = useState({});
   const router = useRouter();
   const { id } = router.query;
-  console.log(id, "line 7");
+  const yourAPIKEY = ''
 
   const urlImage = "https://image.tmdb.org/t/p/original";
   const fetchDetailMovie = async () => {
     try {
       const res = await fetch(
-        `https://api.themoviedb.org/3/movie/${id}?api_key=fbb4a66acd4c03714f3a2a374f130bf7`
+        `https://api.themoviedb.org/3/movie/${id}?api_key=yourAPIKEY`
       );
       const movie = await res.json();
       setMovie(movie);

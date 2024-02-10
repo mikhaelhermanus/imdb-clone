@@ -7,13 +7,14 @@ const HomePage = () => {
   const searchParams = useSearchParams();
   const genre = searchParams.get("genre") || "fetchTrending";
   const [data, setData] = useState([]);
-  console.log(genre, "line 8");
+  const yourAPIKEY = ''
+  
   const fetchTheData = async () => {
     try {
       const res = await fetch(
         `https://api.themoviedb.org/3/${
           genre === "fetchTopRated" ? "movie/top_rated" : "trending/all/week"
-        }?api_key=fbb4a66acd4c03714f3a2a374f130bf7&language=en-US&page=1`,
+        }?api_key=${yourAPIKEY}&language=en-US&page=1`,
         { next: { revalidate: 10000 } }
       );
 
